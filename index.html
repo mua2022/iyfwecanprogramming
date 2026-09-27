@@ -1,14 +1,93 @@
-<html>
-    <head>
-        <title> Introductionto github </title>
-    </head>
-    <body>
-        <h1> WELCOME TO GITHUB </h1>
-        <p>
-
-        </p>
-        <div>
-
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mua Emmanuel, cybersecurity analyst focused on threat detection, security operations, and resilient systems.">
+    <title>Mua Emmanuel | Cybersecurity Analyst</title>
+    <style>
+        :root { --bg: #03150f; --panel: rgba(7, 34, 25, .88); --text: #edfdf5; --muted: #a6cabb; --accent: #55e6c1; --line: #1c4b3b; }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 50% 0%, #0b3b2b 0, var(--bg) 48%, #010b07 100%); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; position: relative; }
+        body::before, body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: -1; background-repeat: repeat; }
+        body::before { opacity: .9; background-image: radial-gradient(circle, rgba(150, 255, 211, 1) 0 1.5px, transparent 2.5px), radial-gradient(circle, rgba(85, 230, 193, .85) 0 1.4px, transparent 2.4px); background-size: 97px 113px, 157px 149px; background-position: 12px 28px, 71px 83px; filter: drop-shadow(0 0 5px rgba(85, 230, 193, 1)); animation: star-glow 3s ease-in-out infinite alternate; }
+        body::after { opacity: .7; background-image: radial-gradient(circle, rgba(208, 255, 232, 1) 0 1.8px, transparent 3px); background-size: 211px 187px; background-position: 143px 19px; filter: drop-shadow(0 0 8px #55e6c1); animation: star-glow 2.5s ease-in-out infinite alternate; }
+        @keyframes star-glow { from { opacity: .35; } to { opacity: 1; } }
+        a { color: inherit; }
+        .wrap { width: min(1080px, calc(100% - 40px)); margin: auto; }
+        header { padding: 22px 0; border-bottom: 1px solid var(--line); }
+        nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+        .brand { font-weight: 800; letter-spacing: .04em; text-decoration: none; }
+        .brand span, .eyebrow { color: var(--accent); }
+        .nav-links { display: flex; gap: 24px; }
+        .nav-links a { color: var(--muted); font-size: .92rem; text-decoration: none; }
+        .nav-links a:hover { color: var(--accent); }
+        .hero { padding: 100px 0 82px; }
+        .eyebrow { text-transform: uppercase; font-size: .78rem; font-weight: 700; letter-spacing: .17em; }
+        h1 { max-width: 780px; margin: 16px 0; font-size: clamp(2.6rem, 7vw, 5.2rem); line-height: 1.06; letter-spacing: -.055em; }
+        h1 span { color: var(--accent); }
+        .intro { max-width: 650px; color: var(--muted); font-size: 1.1rem; }
+        .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+        .button { display: inline-block; padding: 11px 18px; border: 1px solid var(--accent); border-radius: 6px; color: var(--bg); background: var(--accent); font-weight: 700; text-decoration: none; }
+        .button.secondary { color: var(--text); background: transparent; border-color: var(--line); }
+        section { padding: 60px 0; border-top: 1px solid var(--line); }
+        h2 { margin: 0 0 26px; font-size: 1.8rem; letter-spacing: -.03em; }
+        .about { max-width: 780px; color: var(--muted); }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+        .skills span { padding: 6px 12px; color: #c9d7e9; background: #122239; border: 1px solid var(--line); border-radius: 999px; font-size: .88rem; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+        .card { padding: 23px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+        .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+        .card p { margin: 0; color: var(--muted); }
+        .tag { display: inline-block; margin-top: 17px; color: var(--accent); font-size: .82rem; }
+        .contact { color: var(--muted); }
+        .contact a { color: var(--accent); }
+        footer { padding: 24px 0; color: var(--muted); border-top: 1px solid var(--line); font-size: .88rem; }
+        @media (max-width: 640px) { .hero { padding: 70px 0 55px; } .nav-links { gap: 12px; } .nav-links a { font-size: .82rem; } .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="wrap" aria-label="Main navigation">
+            <a class="brand" href="#home">MUA<span>.</span></a>
+            <div class="nav-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero wrap" id="home" style="border: 0">
+            <div class="eyebrow">Cybersecurity Analyst</div>
+            <h1>Hi, I'm Mua Emmanuel.<br><span>I secure what matters.</span></h1>
+            <p class="intro">I help organizations understand their risks, strengthen their defenses, and respond to threats with confidence. I’m passionate about practical security and building more resilient digital environments.</p>
+            <div class="actions"><a class="button" href="#projects">Explore my work</a><a class="button secondary" href="#contact">Get in touch</a></div>
+        </section>
+        <section id="about">
+            <div class="wrap">
+                <h2>About me</h2>
+                <p class="about">I’m Mua Emmanuel, a cybersecurity analyst interested in security operations, threat analysis, and proactive defense. My work combines structured investigation with clear documentation so teams can turn security findings into meaningful improvements.</p>
+                <div class="skills" aria-label="Areas of focus"><span>Threat Detection</span><span>Incident Response</span><span>Vulnerability Assessment</span><span>SIEM Analysis</span><span>Network Security</span><span>Security Awareness</span></div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="wrap">
+                <h2>Selected projects</h2>
+                <div class="grid">
+                    <article class="card"><h3>SIEM Threat Monitoring Lab</h3><p>Built a hands-on monitoring environment to collect and review security events, create detection rules, and investigate suspicious activity.</p><span class="tag">SIEM · Log Analysis · Detection</span></article>
+                    <article class="card"><h3>Phishing Investigation Playbook</h3><p>Created a repeatable workflow for triaging reported emails, examining indicators, documenting findings, and communicating safe next steps.</p><span class="tag">Email Security · Incident Response</span></article>
+                    <article class="card"><h3>Vulnerability Assessment</h3><p>Performed a scoped review of a test environment, prioritized findings by risk, and outlined practical remediation recommendations.</p><span class="tag">Risk Assessment · Remediation</span></article>
+                    <article class="card"><h3>Network Traffic Analysis</h3><p>Analyzed sample network captures to identify unusual communication patterns and summarize investigation evidence in a concise report.</p><span class="tag">Network Security · Threat Analysis</span></article>
+                    <article class="card"><h3>Security Awareness Toolkit</h3><p>Designed clear, actionable guidance to help users recognize common social engineering techniques and report potential security incidents.</p><span class="tag">Security Awareness · User Education</span></article>
+                    <article class="card"><h3>Incident Response Runbook</h3><p>Outlined an incident-handling process covering preparation, identification, containment, recovery, and lessons learned.</p><span class="tag">Playbooks · Response Planning</span></article>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="wrap">
+                <h2>Let’s connect</h2>
+                <p class="contact">Interested in cybersecurity, collaboration, or an opportunity? Reach out at <a href="mailto:mua.emmanuel@mua.com">Mua Emmanuel</a>.</p>
+            </div>
+        </section>
+    </main>
+    <footer><div class="wrap">© 2025 Mua Emmanuel ·|  Cybersecurity Analyst | 0758514602 | emmanuelmua32@gmail.com</div></footer>
+</body>
 </html>
